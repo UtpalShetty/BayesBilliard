@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bayesian billiard</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 id = "header-color">Met Bayes on a billiard table...</h1>
+    </header>
+    
+    <h2 id = "name">Utpal Shetty <a href="https://www.linkedin.com/in/utpal-shetty9818/" target="_blank">
+      <i class="fab fa-linkedin"></i> 
+    </a> 
+    </h2>
+
+<div class = "content">
+    <h2 class="sub-headings">Introduction</h2>
+    <p>
+      The story surrounding Thomas Bayes and his theorem is quite an interesting one. Throughout his life, he was fascinated to find a mathematical approach to <span class = "illustrate"><b>cause</b></span>
+      and <span class = "illustrate"><b>effect</b></span> and he was keen on applying <span class = "illustrate"><b>probability theory</b></span> to study these two aspects of a phenomenon. Specifically he wanted to develop a way to go from an effect
+      back to its cause. So he proposed a <b>thought experiment.</b>
+    </p>
+
+    <h2 class="sub-headings">The thought experiment &#129300</h2>
+    <p>
+      The entire goal was to <span class = "illustrate">guess the position of the ball</span> on a table. He proposed that his back is turned to the table and he asks a friend to throw a cueball(whose position has to be guessed) on the table. 
+      He goes on tell him to throw another ball at random, and report it to bayes whether the second ball landed to the <span class = "illustrate"><b>right</b></span> or <span class = "illustrate"><b>left</b></span> of the cueball. The reasoning went about as follows - if the 
+      second ball landed left of the cueball, then it is more likely that the cueball is towards the right-hand side of the table. This process is continued with subsequent throws, to finally find the position
+      of the cueball. So each time a new ball is thrown, Bayes used to update his belief on where the position of the cueball might be. We have refrained from using mathematical notations as of now, because the 
+      entire point here is to get the intuitiveness of the bayes theorem. 
+
+    </p>
+    
+    <h2 class="sub-headings">A little game to get the intuition. </h2>
+
+    <p>
+      <li>The purpose of the game is to find the <b>cueball </b> which is not visible on the screen. </li>
+      <li>Try clicking on the screen within the white bordered canvas to get the appropriate instructions, which could be further used by you to update your beliefs on where
+        the cueball might actually be. You get <span class = "illustrate">20 tries</span> to guess the cueball's position.
+      </li>
+      <li>If you click on the left and the cueball(grey ball in the pictures) is to the right, the user will be notified accordingly and vice-versa.</li>
+    </p>
+  <div class = "image-container">
+    <img src = "Images\annotated-bayesian-left-2.JPG" alt="Description of the image" width = "500" height = "400" class = "fancy-border">
+    <img src = "Images\annotated-bayesian-right.JPG" width = "500" height = "400" class = "fancy-border"> 
+  </div>
+  
+  <br>
+
+  <div id = "main">
+    <script src="sketch.js"></script>
+    <script src="cueball.js"></script>
+    <script src="IndicatorBalls.js"></script>
+  
+  </div>
+</div>  
+  <footer>
+    <div class = "content">
+    <p>For further explanation on bayesian analysis or if you want to delve deeper into the topic please checkout 
+      <a href = "https://uk.sagepub.com/sites/default/files/upm-assets/93459_book_item_93459.pdf">A Student's guide to bayesian statistics</a>
+      written by <a href = "https://ben-lambert.com/about/">Ben Lambert.</a> You can get in touch with me through my mail shettyutpal18@gmail.com
+    </p>
+    </div>
+  </footer>
+  </body>
+</html>
